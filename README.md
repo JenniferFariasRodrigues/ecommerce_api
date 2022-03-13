@@ -14,7 +14,7 @@ Para executar esta aplicação você deve ter o Docker instalado.
 ## Uso:
 Clone este repositório
 ```shell
-$ git clone https://github.com/JenniferFariasRodrigues/docker_image_flask_python.git
+$ git clone https://github.com/JenniferFariasRodrigues/ecommerce_api
 ```
 Navegue para o diretório clonado
 ```shell
