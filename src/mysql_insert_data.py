@@ -1,4 +1,3 @@
-# https://www.youtube.com/watch?v=HiK6OZjumew
 import mysql.connector
 from mysql.connector import Error
 #inserir registros em um banco de dados MySQL
@@ -8,9 +7,9 @@ try:
     inserir_produtos = """ INSERT INTO tbl_produtos
     (IdProduto, NomeProduto, Preco,Quantidade)
     VALUES
-    (1,'Câmera',850.00,5),
-    (2,'Monitor',630.00,7),
-    (3,'Relógio',575.00,10)
+    (1,'Anel',850.00,5),
+    (2,'Celular',630.00,7),
+    (3,'Brinco',575.00,10)
     """
     cursor=con.cursor()
     cursor.execute(inserir_produtos)

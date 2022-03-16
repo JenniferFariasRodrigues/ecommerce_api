@@ -1,4 +1,3 @@
-#link:https://www.google.com/search?q=como+criar+banco+de+dados+mysql+no+workbanh&oq=como+criar+banco+de+dados+mysql+no+workbanh&aqs=chrome..69i57.10653j0j4&sourceid=chrome&ie=UTF-8#kpvalbx=_mm4wYqLzIsrS1sQPzM-mqA425
 import mysql.connector
 
 con = mysql.connector.connect(host='localhost', database='db_meuslivros',user='root',password='100senha')
