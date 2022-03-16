@@ -1,0 +1,21 @@
+version: '3.4'
+services:
+    app:
+        image: mysql
+        container_name: app
+        ports:
+          - 8080:80
+        depends_on:
+        - db
+    db:
+      
+      restart: always
+      image: mariadb
+      container_name: db
+      environment:
+        - MYSQL_USER=myuser
+        - MYSQL_PASSWORD=mypass
+        - MYSQL_DATABASE=mydb
+        - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      ports:
+        - 3306:3306
