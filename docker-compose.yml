@@ -1,21 +1,21 @@
-version: '3.4'
+version: '3.8'
 services:
-    app:
-        image: mysql
-        container_name: app
-        ports:
-          - 8080:80
-        depends_on:
-        - db
-    db:
-      
-      restart: always
-      image: mariadb
-      container_name: db
-      environment:
-        - MYSQL_USER=myuser
-        - MYSQL_PASSWORD=mypass
-        - MYSQL_DATABASE=mydb
-        - MYSQL_ALLOW_EMPTY_PASSWORD=yes
-      ports:
-        - 3306:3306
+  mysql-db:
+    image: mysql:8.0
+    container_name: mysql_container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 100senha
+      MYSQL_DATABASE: dbecommerce
+
+    ports:
+      - "5000:5000"
+    cap_add:
+      - SYS_NICE
+  adminer:
+    image: adminer:4
+    container_name: adminer_container
+    restart: always
+    ports:
+      - 8080:8080
+

@@ -20,14 +20,20 @@ Navegue para o diretório clonado
 ```shell
 $ cd ecommerce_api
 ```
-Monte o container
+Executar o arquivo docker-compose
 ```shell
-$ docker image build -t ecommerce_api .
+$ docker-compose up
 ```
-Execute o container em segundo plano
-```shell
-$ docker run -p 5001:5000 -d ecommerce_api
+Acessar o endereço 
+```
+* http://localhost:8080/
+```
+Preencher os dados 
+```
+* Servidor:mysql-db
+* Usuário:root
+* Senha:100senha
+* Base de dados:dbecommerce
 ```
 
-Para verificar o resultado acesse o endereço http://localhost:5001
 ```
